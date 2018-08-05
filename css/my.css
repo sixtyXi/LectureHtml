@@ -246,22 +246,10 @@ body .slide-background {
 }
 
 @media all and (max-width: 1279px) {
-
 	.mainpage time {
 		right: 0;
 	}
 }
-
-/*.reveal h1 {
-	color: rgba(255,255,255,.95);
-	text-shadow: 0 2px 4px rgba(0,0,0,.5),
-	0 -1px 3px rgba(0,0,0,.5);
-}
-
-.reveal h1::before,
-.reveal h1::after {
-	content: "";
-}*/
 
 .mainpage .reveal h3 {
 	text-shadow: 0 1px 3px rgba(0,0,0,.5),
@@ -277,73 +265,9 @@ body .slide-background {
 	list-style: none !important;
 }
 
-.css-organizing-project-css .slide-background {
-	background-color: lightblue;
-	background-image: url(../img/project-css.png);
-	background-position: center;
-	background-repeat: no-repeat !important;
-	background-size: contain !important;
-}
-
-.everything-is-block .slide-background {
-	background-image: url(../img/bricks.jpg);
-	background-size: cover !important;
-	background-position: center !important;
-}
-
-.everything-is-block .slide-background::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0,0,0,.4);
-}
-
-.everything-is-block .reveal * {
-	color: #fff !important;
-}
-
-.toast-design .slide-background {
-	background-image: url(../img/project-toasts-example.png);
-	background-position: center !important;
-	background-size: contain !important;
-}
-
-.wtfcode .slide-background {
-	background-image: url(../img/wtfcode.png);
-	background-position: center !important;
-	background-size: contain !important;
-}
-
-.sprite-example .slide-background {
-	background-image: url(../img/sprite-example.png);
-	background-position: center !important;
-	background-size: auto !important;
-}
-
-.sprite-example-2 .slide-background {
-	background-image: url(../img/sprite-example-2.png);
-	background-position: center !important;
-	background-size: auto !important;
-}
-
-.sprite-youtube .slide-background {
-	background-image: url(../img/sprite-youtube.webp);
-	background-position: center;
-	background-size: auto !important;
-}
-
-.rwd-image .slide-background {
-	background-image: url(../img/rwd.png);
-	background-color: #141414 !important;
-	background-size: auto !important;
-	background-position: center !important;
-}
-
 .mainpage .slide-background {
-	background: url(../img/mainpage-bg.jpg);
+	background-color: lightblue;
+	background-image: url(../img/mainpage-bg.jpg);
 	background-repeat: no-repeat;
 }
 
