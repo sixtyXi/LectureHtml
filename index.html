@@ -152,11 +152,63 @@
 				</section>
 
 				<section data-state="hot-n-cold">
-					<h2><span style="color: lightcoral;">Hot</span> & <span style="color: #0d99a5">Cold</span> observables</h2>
+					<h2><span style="color: lightcoral;">Hot</span>🔥 & <span style="color: #0d99a5">Cold</span>⛄ observables</h2>
 					<ul>
 						<li>An observables is <b style="color: #0d99a5">cold</b> if the producer is created whenever an observer subscribes to the observable</li>
 						<li>An observable is <b style="color: lightcoral;">hot</b> if the producer is not created each time an observer subscribes to the observable. </li>
 					</ul>
+				</section>
+
+				<section data-state="cold-observable">
+					<h2><span style="color: #0d99a5">Cold</span>⛄ </h2>
+					<img src="./img/cold_example.png" alt="cold observable example">
+				</section>
+
+				<section data-state="subject">
+					<section>
+						<h2>Subject</h2>
+						<div style="display: flex;
+							justify-content: space-between;
+							align-items: center; width: 80%; margin: 0 auto;">
+							<div style="padding: 20px; border: 2px solid #bada55">
+								<h6>Observable methods</h6>
+								<ul style="margin-top: 20px">
+									<li>.subscribe()</li>
+									<li>.map()</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div style="font-size: 50px;">+</div>
+							<div style="padding: 20px; border: 2px solid lightseagreen">
+								<h4>Observer methods</h4>
+								<ul style="margin-top: 20px">
+									<li>.next()</li>
+									<li>.error()</li>
+									<li>.complete()</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Subject</h2>
+						<a href="https://codepen.io/Dolgach/pen/GBXjNa">example</a>
+					</section>
+
+					<section>
+						<h2>Subject types</h2>
+						<ul>
+							<li>Subject</li>
+							<li>ReplaySubject</li>
+							<li>BehaviorSubject</li>
+							<li>AsyncSubject</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-state="hot-observable">
+					<h2><span style="color: lightcoral;">Hot</span>🔥 </h2>
+					<img src="./img/hot_example.png" alt="hot observable example">
 				</section>
 
 				<section data-state="thank-you">
