@@ -188,6 +188,7 @@
 								</ul>
 							</div>
 						</div>
+						<div style="color: lightcoral;">!!! It is not reusable after .error() or .complete() calls</div>
 					</section>
 
 					<section>
@@ -209,6 +210,17 @@
 				<section data-state="hot-observable">
 					<h2><span style="color: lightcoral;">Hot</span>🔥 </h2>
 					<img src="./img/hot_example.png" alt="hot observable example">
+				</section>
+
+				<section data-state="cold-to-hot">
+					<h2><span style="color: #0d99a5">Cold</span>⛄ ➡ <span style="color: lightcoral;">Hot</span>🔥</h2>
+					<ul>
+						<li style="color: lightseagreen">.multicast() + new Subject() + .connect()</li>
+						<li style="color: lightgreen;">.multicast() + () => new Subject() + .refCount()</li>
+						<li><span style="color: lightseagreen">.multicast() + new Subject()</span> === <span style="color: lightpink;">.publish()</span></li>
+						<li><span style="color: lightgreen;">.multicast() + () => new Subject() + .refCount()</span> === <span style="color: lightcoral;">.share()</span></li>
+					</ul>
+					<a href="https://codepen.io/Dolgach/pen/pZONLO">Example</a>
 				</section>
 
 				<section data-state="thank-you">
