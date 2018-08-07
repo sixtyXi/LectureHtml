@@ -53,13 +53,16 @@
 					<h2>About me</h2>
 					<ul>
 						<li>
-							<h3>Senior software engineer</h3>
+							Stanislav Dolgachov
 						</li>
 						<li>
-							<h3>3+ years of production experience</h3>
+							Senior software engineer
 						</li>
 						<li>
-							<h3>5 projects</h3>
+							3+ years of production experience
+						</li>
+						<li>
+							5 projects
 						</li>
 					</ul>
 				</section>
@@ -86,25 +89,40 @@
 				</section>
 
 				<section data-state="observable-creation">
-					<h2>Observable creation</h2>
-					<h3>Observable it is "just a function"</h3>
-					<iframe height='400' scrolling='no' title='[RxJS basics] Create observable simple' src='//codepen.io/Dolgach/embed/oMMwBG/?height=400&theme-id=0&default-tab=js&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/Dolgach/pen/oMMwBG/'>[RxJS basics] Create observable simple</a> by Stas (<a href='https://codepen.io/Dolgach'>@Dolgach</a>) on <a href='https://codepen.io'>CodePen</a>.
-					</iframe>
-					<a href="https://codepen.io/Dolgach/pen/ZrWgYo" target="_blank">Example</a>
-				</section>
+					<section>
+						<h2>Observable creation</h2>
+						<h3>Observable it is "just a function"</h3>
+						<iframe height='400' scrolling='no' title='[RxJS basics] Create observable simple' src='//codepen.io/Dolgach/embed/oMMwBG/?height=400&theme-id=0&default-tab=js&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/Dolgach/pen/oMMwBG/'>[RxJS basics] Create observable simple</a> by Stas (<a href='https://codepen.io/Dolgach'>@Dolgach</a>) on <a href='https://codepen.io'>CodePen</a>.
+						</iframe>
+						<a href="https://codepen.io/Dolgach/pen/ZrWgYo" target="_blank">Example</a>
+					</section>
 
-				<section data-state="observable-creation-some-create-methods">
-					<h2>Some create methods</h2>
-					<ul>
-						<li>.of({})</li>
-						<li>.interval([milliseconds])</li>
-						<li>.timer([milliseconds])</li>
-						<li>.throw(new Error('error'))</li>
-						<li>.empty()</li>
-						<li>.never()</li>
-						<li>.from([1, 2, 3])</li>
-					</ul>
-					<a href="https://codepen.io/Dolgach/pen/wyeJNO" target="_blank">Example</a>
+					<section>
+						<h3>Summary:</h3>
+						<ul>
+							<li>observer.next(...), observer.error(...), observer.complete()</li>
+							<li>Observable is just a function that takes an observer and returns a function</li>
+							<li>3 callbacks in a subscribe method or a Subject instance</li>
+							<li>Returned function is called when an observable is destroyed</li>
+							<li>To complete an observable - subscription.unsubscribe() & observer.complete();</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>Some create methods</h2>
+						<ul>
+							<li>.of({})</li>
+							<li>.interval([milliseconds])</li>
+							<li>.timer([milliseconds])</li>
+							<li>.throw(new Error('error'))</li>
+							<li>.empty()</li>
+							<li>.never()</li>
+							<li>.from([1, 2, 3])</li>
+						</ul>
+						<a href="https://codepen.io/Dolgach/pen/wyeJNO" target="_blank">Example</a>
+					</section>
+
 				</section>
 
 				<section data-state="error-handling">
@@ -126,10 +144,9 @@
 					<section>
 						<h2>Main differences</h2>
 						<ul>
-							<li>1. Totally different</li>
-							<li>2. Observable is not created where there are no subscribers</li>
-							<li>3. Observable could be reused (Will be recreated for new subscriber)</li>
-							<li>4. Observable could be synchronous</li>
+							<li>1. Observable is not created when there are no subscribers</li>
+							<li>2. Observable could be reused (Is be recreated for new subscriber)</li>
+							<li>3. Observable could be synchronous</li>
 						</ul>
 					</section>
 				</section>
@@ -223,9 +240,27 @@
 					<a href="https://codepen.io/Dolgach/pen/pZONLO" target="_blank">Example</a>
 				</section>
 
+				<section data-state="unit-testing">
+					<h1>Unit testing</h1>
+				</section>
+
 				<section data-state="thank-you">
 					<h2 class="coloured-symbols coloured-symbols_blue">Thank you</h2>
 					<div>Questions?</div>
+				</section>
+
+				<section>
+					<h2>Links:</h2>
+					<ul>
+						<li><a target="_blank" href="https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87">Learning observable by building one</a></li>
+						<li><a target="_blank" href="https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93">On The Subject Of Subjects (in RxJS)</a></li>
+						<li><a target="_blank" href="https://stackoverflow.com/questions/38008334/angular-rxjs-when-should-i-unsubscribe-from-subscription">Angular/RxJs When should I unsubscribe from `Subscription`</a></li>
+						<li><a target="_blank" href="https://hackernoon.com/rxjs-reduce-bundle-size-using-lettable-operators-418307295e85">RxJS — Reduce Angular app bundle size using lettable operators</a></li>
+						<li><a target="_blank" href="https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339">Hot vs Cold Observables</a></li>
+						<li><a target="_blank" href="https://blog.angularindepth.com/rxjs-understanding-the-publish-and-share-operators-16ea2f446635">RxJS: Understanding the publish and share Operators</a></li>
+						<li><a target="_blank" href="https://codepen.io/collection/AygdKV/">My examples part 1</a></li>
+						<li><a target="_blank" href="https://codepen.io/collection/ngmmoz/">My examples part 2</a></li>
+					</ul>
 				</section>
 
 				<!--My slides end-->
