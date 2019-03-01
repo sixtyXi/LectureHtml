@@ -260,11 +260,6 @@ body .slide-background {
 	color: #fff;
 }
 
-.reveal ul li,
-.reveal ol li {
-	list-style: none !important;
-}
-
 .mainpage .slide-background {
 	background-color: lightblue;
 	background-image: url(../img/mainpage-bg.jpg);
@@ -327,7 +322,16 @@ span.value {
 	width: 50%;
 }
 
-.center-text, ul.center-text, .center-text li {
-	text-align: center;
-	list-style: none;
+/* Custom styles */
+
+.element-tag {
+	color: blue;
+}
+
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+
+.mt-50 {
+	margin-top: 50px !important;
 }
