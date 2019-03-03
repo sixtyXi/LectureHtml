@@ -48,19 +48,90 @@
 					<h3>Сергей Караулов</h3>
 				</section>
 
+				<section >
+					<section data-state="intro">
+							<h2>Развитие интернета</h2>
+							<img src="./img/ARPA.jpg" alt="">
+						</section>
+						<section>
+							<h2>HTTP</h2>
+							<img src="./img/client_server.png" alt="">
+						</section>
+						<section>
+							<h2>GET запрос для адреса: http://example.com/video</h2>
+							<h3>Стартовая строка запроса</h3>
+							<p>GET /video HTTP/1.1</p>
+							<h3>Заголовки</h3>
+							<p>HOST: example.com</p>
+						</section>
+						<section>
+							<h2>Ответ сервера</h2>
+							<h3>Стартовая строка ответа</h3>
+							<p>HTTP/1.1 200 OK</p>
+							<h3>Заголовки</h3>
+							<ul>
+								<li>Date: Sun, 03 Mar 2019 10:22:09 GMT</li>
+								<li>Content-Type: text/html; charset=UTF-8</li>
+								<li>Content-Length: 1270</li>
+								<li>Server: ECS</li>
+							</ul>
+							<h3>Тело сообщения</h3>
+						</section>
+						<section>
+							<table>
+								<tr>
+									<th>GET</th>
+									<th>POST</th>
+								</tr>
+								<tr>
+									<td>Может кэшироваться браузером</td>
+									<td>Не кэшируется</td>
+								</tr>
+								<tr>
+									<td>Длина ограничена около 2000 символами</td>
+									<td>Длина не ограничена</td>
+								</tr>
+								<tr>
+									<td>Нельзя использовать для приватных данных</td>
+									<td>Можно использовать для приватных данных</td>
+								</tr>
+								<tr>
+									<td>Не изменяет данные на сервере</td>
+									<td>Может изменять данные на сервере</td>
+								</tr>
+							</table>
+						</section>
+						<section>
+							<h2>Uniform Resource Locator (URL)</h2>
+							<p>
+								<span class="fragment" data-fragment-index="1">http://</span><span class="fragment" data-fragment-index="2">example.com</span><span class="fragment" data-fragment-index="3">:80</span><span class="fragment" data-fragment-index="4">/user</span><span class="fragment" data-fragment-index="5">?name=Vasya</span><span class="fragment" data-fragment-index="6">#skills</span>
+								<ul>
+									<li class="fragment" data-fragment-index="1">Протокол</li>
+									<li class="fragment" data-fragment-index="2">Домен</li>
+									<li class="fragment" data-fragment-index="3">Порт</li>
+									<li class="fragment" data-fragment-index="4">Путь до ресурса</li>
+									<li class="fragment" data-fragment-index="5">Параметр</li>
+									<li class="fragment" data-fragment-index="6">Хэш навигация по странице</li>
+								</ul>
+							</p>
+						</section>
+				</section>
+
 				<section data-state="backbone">
 					<h2>Анатомия HTML документа</h2>
 					<a href="https://codesandbox.io/s/5x4qw55864?fontsize=14" target="_blank">Пример</a>
 				</section>
 
 				<section data-state="history">
-					<h2>История</h2>
-					<p>HTML разработан Тимоти Бернерсом Ли в 1986 - 1991 гг.</p>
-					<a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">Первый сайт</a>
-					<div class="fragment">
-						<p>В настоящее время используется HTML 5й версии</p>
-						<a href="https://www.w3.org/html/logo/" target="_blank"><img src="./img/HTML5_Logo_256.png" alt="html logo"></a>
-					</div>
+					<section>
+						<h2>История</h2>
+						<p>HTML разработан Тимоти Бернерсом Ли в 1986 - 1991 гг.</p>
+						<a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">Первый сайт</a>
+						<div class="fragment">
+							<p>В настоящее время используется HTML 5й версии</p>
+							<a href="https://www.w3.org/html/logo/" target="_blank"><img src="./img/HTML5_Logo_256.png" alt="html logo"></a>
+						</div>
+					</section>
 				</section>
 
 				<section>
